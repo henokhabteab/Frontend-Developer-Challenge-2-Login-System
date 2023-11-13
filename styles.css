@@ -1,0 +1,113 @@
+#messages {
+  top: 50px;
+  z-index: 10000;
+}
+.notification-img {
+  max-width: 6rem;
+  max-height: 6rem;
+}
+.notification-container {
+  background: #eaf4ef;
+  border: 1px solid #1bc459;
+  color: #000000;
+  border-radius: 10px;
+}
+#all-notifications-container {
+  right: 0.4rem;
+  min-width: 400px;
+  width: 40%;
+}
+
+@media (max-width: 768px) {
+  #messages {
+    top: 100px;
+  }
+  #all-notifications-container {
+    width: 100%;
+    right: 0;
+  }
+}
+
+.lab_mdll input[type="radio"]:checked + label > img {
+  box-shadow: 0px 0 2px 2px #13b15c !important;
+  -webkit-box-shadow: 0px 0 2px 2px #13b15c !important;
+}
+
+.footerHeight {
+  height: 51px !important;
+}
+
+.langugeDropdown {
+  width: 115px;
+  position: fixed;
+  bottom: 0;
+  left: 40px;
+}
+
+.langugeDropdown .dropdown-toggle {
+  background-color: #000;
+  padding: 9px 15px;
+  margin: 0;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+
+.langugeDropdown .dropdown-toggle:after {
+  display: none;
+}
+
+.langugeDropdown .dropdown-menu {
+  min-width: 115px;
+  left: -5px;
+  padding: 0;
+  border: 0;
+}
+
+.langugeDropdown .dropdown-menu li a {
+  background-color: #498cce;
+  width: 100%;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 9px 15px;
+}
+
+.langugeDropdown .dropdown-menu li:first-child a {
+  border-radius: 10px 10px 0 0;
+}
+
+.langugeDropdown .dropdown-menu li a:hover,
+.langugeDropdown .dropdown-menu li a.active {
+  background-color: #7db6ef;
+}
+
+.langugeDropdown.open .dropdown-toggle,
+.langugeDropdown.show .dropdown-toggle {
+  border-radius: 0;
+}
+
+.langugeDropdown.open .dropdown-menu {
+  position: absolute;
+  transform: translate3d(0px, -85px, 0px);
+  top: 0px;
+  left: 0px;
+  will-change: transform;
+  display: block;
+}
+
+.footer {
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  bottom: 0px !important;
+  background-color: rgba(255, 255, 255, 1) !important;
+  z-index: 9999;
+  display: table;
+}
+
+.apple_sign_in {
+  height: 42px;
+  border: 1px solid #000;
+  padding: 5px;
+}

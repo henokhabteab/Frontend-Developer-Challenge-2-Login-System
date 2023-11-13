@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div id="welcomeMessage"></div>
+
+    <script>
+      // Retrieve data from sessionStorage
+      const userDataString = sessionStorage.getItem("userData");
+      if (userDataString) {
+        const userData = JSON.parse(userDataString);
+
+        // Display welcome message on the page
+        const welcomeMessageElement = document.getElementById("welcomeMessage");
+        welcomeMessageElement.innerHTML = `<h2>Welcome, ${userData.firstName}!</h2><p>You are successfully loged in.</p>`;
+      }
+
+      // Clear form data after displaying
+      sessionStorage.removeItem("userData");
+    </script>
+  </body>
+</html>

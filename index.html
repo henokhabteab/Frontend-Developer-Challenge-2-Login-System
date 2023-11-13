@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="csrf-token" content="CXovaJfMQOte0iPL3gbpKn55RiPLUZTo2B2XNSlF">
+<title> Log in</title>
+<meta property="og:locale" content="en_US" />
+
+<link rel="shortcut icon" href="https://d3f06rtlkr354b.cloudfront.net/public/uploads/settings/favicon.ico">
+<link rel="icon"
+href="https://d3f06rtlkr354b.cloudfront.net/public/uploads/settings/favicon.ico"
+type="image/x-icon">
+<link href="https://d3f06rtlkr354b.cloudfront.net/public/adminassets/vendors/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.css"
+rel="stylesheet" type="text/css"/>
+<link href="https://d3f06rtlkr354b.cloudfront.net/public/front/css/dist/bootstrap.min.css" rel="stylesheet">
+<link href="https://d3f06rtlkr354b.cloudfront.net/public/front/css/dist/mdb.min.css" rel="stylesheet">
+<link href="https://d3f06rtlkr354b.cloudfront.net/public/front/css/dist/style.css" rel="stylesheet">
+<link href="https://d3f06rtlkr354b.cloudfront.net/public/front/css/dist/jquery.toast.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.18/css/intlTelInput.css" integrity="sha512-gxWow8Mo6q6pLa1XH/CcH8JyiSDEtiwJV78E+D+QP0EVasFs8wKXq16G8CLD4CJ2SnonHr4Lm/yY2fSI2+cbmw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <link href="https://d3f06rtlkr354b.cloudfront.net/public/front/enjoyhint/enjoyhint.css" rel="stylesheet">
+<link href="https://d3f06rtlkr354b.cloudfront.net/public/front/enjoyhint/enjoyhint.css" rel="stylesheet">
+<!-- dialog flow css -->
+<link href="https://d3f06rtlkr354b.cloudfront.net/public/front/css/dialog-flow.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<link href="https://d3f06rtlkr354b.cloudfront.net/public/front/css/pnotify.custom.min.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" rel="stylesheet" type="text/css">
+<!-- Stripe Stylesheet -->
+<link href="https://d3f06rtlkr354b.cloudfront.net/public/front/css/stripe.css" rel="stylesheet">
+<script src="https://d3f06rtlkr354b.cloudfront.net/public/front/js/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+<script src="https://d3f06rtlkr354b.cloudfront.net/public/front/js/popper.min.js"></script>
+<script src="https://d3f06rtlkr354b.cloudfront.net/public/front/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://d3f06rtlkr354b.cloudfront.net/public/front/js/sweetalert.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.18/js/intlTelInput.min.js" integrity="sha512-hpJ6J4jGqnovQ5g1J39VtNq1/UPsaFjjR6tuCVVkKtFIx8Uy4GeixgIxHPSG72lRUYx1xg/Em+dsqxvKNwyrSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://d3f06rtlkr354b.cloudfront.net/public/adminassets/vendors/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+<script src="https://d3f06rtlkr354b.cloudfront.net/public/front/js/jquery.toast.min.js"></script>
+<script src="https://d3f06rtlkr354b.cloudfront.net/public/front/js/pnotify.custom.min.js"></script>
+<script src="https://d3f06rtlkr354b.cloudfront.net/public/front/enjoyhint/enjoyhint.min.js"></script>
+<script src="https://d3f06rtlkr354b.cloudfront.net/public/front/enjoyhint/enjoyhint.js"></script>
+<script src="https://kit.fontawesome.com/5fe1f93b25.js" crossorigin="anonymous"></script>
+</head>
+
+<div class="position-relative" id="messages">
+<div class="position-absolute">
+<div id="all-notifications-container" class="position-fixed">
+</div>
+</div>
+</div>
+
+<body class="login-page register-page">
+
+<section class="check">
+<div class="loader-main-block" style="top: 0px;">
+<div class="j-loader">Prepr</div>
+</div>
+<div class="container-fluid">
+<div class="col-md-12 sm-p-0">
+<div class="row">
+<div class="col-lg-6 col-md-6" style="padding-left: 10px!important;">
+<div class="row">
+<div class="col-lg-12">
+<div id="home-slider" class="owl-carousel owl-theme">
+<div class="item">
+<div class="slider-img-cont">
+<img src="https://d3f06rtlkr354b.cloudfront.net/public/front/img/Splash_1.png" alt="">
+</div>
+</div>
+
+<div class="item">
+<div class="slider-img-cont">
+<img src="https://d3f06rtlkr354b.cloudfront.net/public/front/img/Splash_2.png" alt="">
+</div>
+</div>
+
+<div class="item">
+<div class="slider-img-cont">
+<img src="https://d3f06rtlkr354b.cloudfront.net/public/front/img/Splash_3.png" alt="">
+</div>
+</div>
+
+<div class="item">
+<div class="slider-img-cont">
+  <img src="https://d3f06rtlkr354b.cloudfront.net/public/front/img/Splash_4.png" alt="">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 offset-md-7" style="margin-left: 0.333333%!important; padding-left: 18px!important;">
+
+<div class="card login-card mt-5">
+<div class="card-header bg-white text-center">
+<div class="login-logo p-10">
+<a href="https://preprlabs.org/explore">
+<img src="https://d3f06rtlkr354b.cloudfront.net/public/front/img/logoNew.png" alt="">
+</a>
+</div>
+</div>
+<div class="card-body">
+<!-- form Login -->
+<form method="POST" name="myForm" class="login-form form-horizontal" autocomplete="off">
+<input type="hidden" name="_token" value="CXovaJfMQOte0iPL3gbpKn55RiPLUZTo2B2XNSlF"> <div class="md-form cs-form">
+<input type="text" name="username" id="username" class="form-control"
+autocomplete="off">
+<label> <span class="input-icon"><img src="https://d3f06rtlkr354b.cloudfront.net/public/front/img/user.png"
+alt=""></span> User name or email</label>
+<span class="text-left help-block text-red"></span>
+</div>
+<div class="md-form cs-form">
+<input type="password" name="password" id="password" class="form-control"
+autocomplete="off">
+<label><span class="input-icon"><img src="https://d3f06rtlkr354b.cloudfront.net/public/front/img/password.png"
+alt=""></span> Password </label>
+<span class="text-left help-block text-red"></span>
+</div>
+<div class="clearfix"></div>
+<div class="md-form cs-form mt-3">
+<div class="forgt-pss-link">
+<a href="https://preprlabs.org/password/reset">
+Forgot Password?
+</a>
+</div>
+</div>
+<div class="text-center mt-3">
+<button class="btn btn-warning btn-block" type="submit" onclick="submitForm()">Log in</button>
+</div>
+<div class="text-center or">
+<p>or</p>
+</div>
+<div class="m-b-5">
+<a href="#" class="btn btn-info btn-block">Continue with Microsoft</a>
+</div>
+<div class="m-b-5">
+<a href="#"
+class="btn btn-info btn-block">Continue with LinkedIn </a>
+</div>
+
+<div class="m-b-5">
+<a href="#"
+class="btn btn-danger btn-block">Continue with Google</a>
+</div>
+
+<div class="m-b-5">
+    <a href="#"
+    class="btn btn-outline-dark btn-block"><i class="fa-brands fa-apple"></i> Continue with Apple</a>
+    </div>
+
+<div class="m-b-5">
+<a href="#"
+class="btn btn-danger btn-block">Continue with Magnet</a>
+</div>
+
+
+</form>
+<!-- form login -->
+<div class="text-center m-t-8 m-b-5 f-s-14">
+Don&#039;t have an account? <a href="https://preprlabs.org/register"
+class="text-light-green">Sign up</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="footer card bg-white footerHeight">
+<div class="container">
+<div class="row">
+<div class="col-md-12 text-center">
+
+<label class="footerLinks" style="float:left; padding: 10px 5px; font-size: 12px"
+target="_blank">v24.0.5</a></label>
+<a class="footerLinks" href="https://prepr.org/privacy-policy/"
+target="_blank">Privacy policy</a>
+<a class="footerLinks" href="https://prepr.org/terms-of-use/"
+target="_blank">Terms of use</a>
+<a class="footerLinks" href="https://intercom.help/preprme/en/"
+target="_blank">Help Center</a>
+<label class="footerLinks"
+style="float: right;padding: 0px 5px; font-size: 12px">Powered by<a
+href="https://learnlab.ai" target="_blank"><b>LearnLab.ai</b></a></label>
+</div>
+</div>
+</div>
+</footer>
+<script src="https://d3f06rtlkr354b.cloudfront.net/public/front/js/jquery.slimscroll.min.js"></script>
+
+<script src="https://d3f06rtlkr354b.cloudfront.net/public/front/js/mdb.min.js"></script>
+<!-- Onscreen Notifications -->
+<script src="https://d3f06rtlkr354b.cloudfront.net/public/front/js/owl.carousel.min.js"></script>
+<link href="https://d3f06rtlkr354b.cloudfront.net/public/front/css/dist/owl.carousel.css" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"/>
+<script type="text/javascript">
+$('#home-slider').owlCarousel({
+navigation: true, // Show next and prev buttons
+slideSpeed: 300,
+paginationSpeed: 400,
+singleItem: true,
+autoPlay: 6000, //Set AutoPlay to 3 seconds
+dots: true,
+navigation: true,
+navigationText: ["<i class='fa fa-chevron-left pull-left'></i>", "<i class='fa fa-chevron-right pull-right' ></i>"]
+});
+</script>
+
+<script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
+
+
+
+<!-- langugeDropdown start -->
+<div class="langugeDropdown onHover">
+<button class="btn dropdown-toggle" name="recordinput" data-toggle="dropdown"> English</button>
+<ul class="dropdown-menu">
+<li>
+<a href="https://preprlabs.org/language/en">
+English
+</a>
+</li>
+<li>
+<a href="https://preprlabs.org/language/fr-CA">
+French
+</a>
+</li>
+</ul>
+</div>
+<!-- langugeDropdown end -->
+
+<!-- login -->
+
+<script>
+  function submitForm() {
+      // Get form data
+
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      // Store data in sessionStorage
+      sessionStorage.setItem('userData', JSON.stringify({email, password }));
+
+      // Navigate to the login page
+      window.location.href = 'welcome.html';
+  }
+</script>
+
+</body>
+
+</html>
